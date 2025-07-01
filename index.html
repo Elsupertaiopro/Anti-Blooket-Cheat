@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>💉 Vacuna Anti-Hack para Blooket</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2em;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1em;
+    }
+    a.bookmarklet {
+      display: inline-block;
+      margin: 1em;
+      padding: 1em 2em;
+      background: #0078d7;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: grab;
+    }
+    a.bookmarklet:active {
+      cursor: grabbing;
+    }
+    p {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>💉 Bookmarklets Vacuna Anti-Hack Blooket</h1>
+  <a href="javascript:(function(){alert('💉 Vacuna anti-hack activada.');window.vacunaAntiHack=true;Object.defineProperty(window,'eval',{get:()=>{alert('⛔ Uso de eval bloqueado.');return()=>{};}});window.Function=function(){alert('⛔ Uso de Function bloqueado.');return()=>{};};const originalFetch=window.fetch;window.fetch=function(...args){if(args[0].includes('github')||args[0].includes('.js')){alert('🚫 Intento de cheat bloqueado.');return Promise.reject('Bloqueado por vacuna.');}return originalFetch.apply(this,args);};console.log('✅ Vacuna activada');})();" class="bookmarklet" draggable="true" title="Arrastrar a la barra de marcadores">Activar Vacuna</a>
+
+  <a href="javascript:(function(){if(window.vacunaAntiHack){alert('✅ La vacuna anti-hack está activa.');}else{alert('❌ La vacuna NO está activa.');}})();" class="bookmarklet" draggable="true" title="Arrastrar a la barra de marcadores">Verificar Vacuna</a>
+
+  <p>Arrastrá cualquiera de los botones a la barra de marcadores para crear el bookmarklet.</p>
+</body>
+</html>
